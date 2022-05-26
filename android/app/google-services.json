@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "199450109077",
+    "project_id": "test-auth-flutter-flow",
+    "storage_bucket": "test-auth-flutter-flow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199450109077:android:2ba43d2338320a302d679c",
+        "android_client_info": {
+          "package_name": "com.example.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199450109077-sf4ac28qc0rnnu7va4b9ruu262jqdjkd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBpTxjXntSUi1GTxbHjHUnMlqSF4BAuWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199450109077-sf4ac28qc0rnnu7va4b9ruu262jqdjkd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
