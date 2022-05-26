@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class ChatInputField extends StatelessWidget {
   const ChatInputField({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -48,8 +48,8 @@ class ChatInputField extends StatelessWidget {
                       color: Theme.of(context)
                           .textTheme
                           .bodyText1
-                          .color
-                          .withOpacity(0.64),
+                          ?.color
+                          ?.withOpacity(0.64),
                     ),
                     SizedBox(
                       width: kDefaultPadding / 4,
@@ -64,8 +64,8 @@ class ChatInputField extends StatelessWidget {
                       color: Theme.of(context)
                           .textTheme
                           .bodyText1
-                          .color
-                          .withOpacity(0.64),
+                          ?.color
+                          ?.withOpacity(0.64),
                     ),
                     SizedBox(
                       width: kDefaultPadding / 4,
@@ -75,8 +75,8 @@ class ChatInputField extends StatelessWidget {
                       color: Theme.of(context)
                           .textTheme
                           .bodyText1
-                          .color
-                          .withOpacity(0.64),
+                          ?.color
+                          ?.withOpacity(0.64),
                     ),
                   ],
                 ),

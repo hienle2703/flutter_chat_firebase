@@ -3,6 +3,8 @@ import 'package:chat/screens/auth/signin_or_signup_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
+  static Page page() => MaterialPage<void>(child: WelcomeScreen());
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline5
-                  .copyWith(fontWeight: FontWeight.bold)),
+                  ?.copyWith(fontWeight: FontWeight.bold)),
           Spacer(),
           Text(
             "Free to chat with anybody in your \nmother languages",
@@ -25,8 +27,8 @@ class WelcomeScreen extends StatelessWidget {
                 color: Theme.of(context)
                     .textTheme
                     .bodyText1
-                    .color
-                    .withOpacity(0.64)),
+                    ?.color
+                    ?.withOpacity(0.64)),
           ),
           Spacer(flex: 3),
           FittedBox(
@@ -38,12 +40,12 @@ class WelcomeScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     Text("Skip",
-                        style: Theme.of(context).textTheme.bodyText1.copyWith(
+                        style: Theme.of(context).textTheme.bodyText1?.copyWith(
                             color: Theme.of(context)
                                 .textTheme
                                 .bodyText1
-                                .color
-                                .withOpacity(0.8))),
+                                ?.color
+                                ?.withOpacity(0.8))),
                     SizedBox(width: kDefaultPadding / 4),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -51,8 +53,8 @@ class WelcomeScreen extends StatelessWidget {
                       color: Theme.of(context)
                           .textTheme
                           .bodyText1
-                          .color
-                          .withOpacity(0.8),
+                          ?.color
+                          ?.withOpacity(0.8),
                     )
                   ],
                 )),

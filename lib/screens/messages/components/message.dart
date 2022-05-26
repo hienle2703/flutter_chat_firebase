@@ -8,8 +8,8 @@ import 'video_message.dart';
 
 class Message extends StatelessWidget {
   const Message({
-    Key key,
-    @required this.message,
+    Key? key,
+    required this.message,
   }) : super(key: key);
 
   final ChatMessage message;
@@ -51,7 +51,7 @@ class Message extends StatelessWidget {
 }
 
 class MessageStatusDot extends StatelessWidget {
-  const MessageStatusDot({Key key, this.status}) : super(key: key);
+  const MessageStatusDot({Key? key, required this.status}) : super(key: key);
 
   final MessageStatus status;
 
@@ -61,13 +61,13 @@ class MessageStatusDot extends StatelessWidget {
       switch (status) {
         case MessageStatus.not_sent:
           return kErrorColor;
-          break;
+
         case MessageStatus.not_view:
-          return Theme.of(context).textTheme.bodyText1.color.withOpacity(0.1);
-          break;
+          return Theme.of(context).textTheme.bodyText1!.color!.withOpacity(0.1);
+
         case MessageStatus.viewed:
           return kPrimaryColor;
-          break;
+
         default:
           return Colors.transparent;
       }

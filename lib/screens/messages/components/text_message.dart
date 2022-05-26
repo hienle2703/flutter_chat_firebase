@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 class TextMessage extends StatelessWidget {
   const TextMessage({
-    Key key,
-    @required this.message,
+    Key? key,
+    required this.message,
   }) : super(key: key);
 
   final ChatMessage message;
@@ -24,7 +24,7 @@ class TextMessage extends StatelessWidget {
         style: TextStyle(
             color: message.isSender
                 ? Colors.white
-                : Theme.of(context).textTheme.bodyText1.color),
+                : Theme.of(context).textTheme.bodyText1?.color),
       ),
     );
   }

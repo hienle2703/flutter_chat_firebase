@@ -4,9 +4,9 @@ import 'package:chat/constants.dart';
 
 class ChatCard extends StatelessWidget {
   const ChatCard({
-    Key key,
-    @required this.chat,
-    @required this.press,
+    Key? key,
+    required this.chat,
+    required this.press,
   }) : super(key: key);
 
   final Chat chat;
