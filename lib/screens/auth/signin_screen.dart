@@ -1,6 +1,6 @@
 import 'package:chat/components/primary_button.dart';
 import 'package:chat/constants.dart';
-import 'package:chat/cubits/login_cubit.dart';
+import 'package:chat/cubits/login/login_cubit.dart';
 import 'package:chat/repositories/auth_repository.dart';
 import 'package:chat/screens/auth/signup_screen.dart';
 import 'package:chat/screens/chats/chat_screen.dart';
