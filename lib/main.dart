@@ -2,6 +2,7 @@ import 'package:chat/blocs/app/app_bloc.dart';
 import 'package:chat/config/routes.dart';
 import 'package:chat/firebase_options.dart';
 import 'package:chat/repositories/auth_repository.dart';
+import 'package:chat/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';
@@ -45,20 +46,14 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: FlowBuilder(
-      state: context.select((AppBloc bloc) => bloc.state.status),
-      onGeneratePages: onGenerateAppViewPages,
-    ));
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: lightThemeData(context),
+      darkTheme: darkThemeData(context),
+      home: FlowBuilder(
+        state: context.select((AppBloc bloc) => bloc.state.status),
+        onGeneratePages: onGenerateAppViewPages,
+      ),
+    );
   }
-
-  // @override
-  // Widget build(BuildContext context) {
-  //   return MaterialApp(
-  //     title: 'Flutter Demo',
-  //     debugShowCheckedModeBanner: false,
-  //     theme: lightThemeData(context),
-  //     darkTheme: darkThemeData(context),
-  //     home: WelcomeScreen(),
-  //   );
-  // }
 }
